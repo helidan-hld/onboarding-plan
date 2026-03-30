@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>丽丹 · 私域运营负责人入职周规划</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #FDF6F0;
+    color: #3D2B1F;
+    min-height: 100vh;
+  }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, #E8B4A0 0%, #C97B6B 50%, #9E6B5A 100%);
+    color: white;
+    padding: 48px 24px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 300px; height: 300px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 50%;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: -40px;
+    width: 250px; height: 250px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 50%;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    padding: 4px 16px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    backdrop-filter: blur(4px);
+  }
+  .hero h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .meta-tag {
+    background: rgba(255,255,255,0.15);
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* Job Understanding */
+  .job-section {
+    padding: 32px 20px 0;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .section-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #C97B6B;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #E8C4B8;
+  }
+
+  .focus-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .focus-card {
+    background: white;
+    border-radius: 14px;
+    padding: 18px;
+    border: 1px solid #F0D9CF;
+    position: relative;
+    overflow: hidden;
+  }
+  .focus-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    border-radius: 14px 14px 0 0;
+  }
+  .card-1::before { background: #E8B4A0; }
+  .card-2::before { background: #C97B6B; }
+  .card-3::before { background: #9E6B5A; }
+  .card-4::before { background: #D4A89A; }
+  .card-5::before { background: #B87E6E; }
+  .card-6::before { background: #8B5E52; }
+
+  .focus-num {
+    font-size: 11px;
+    color: #C97B6B;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+  .focus-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #3D2B1F;
+    margin-bottom: 8px;
+  }
+  .focus-desc {
+    font-size: 12px;
+    color: #7A6050;
+    line-height: 1.6;
+  }
+
+  .insight-banner {
+    background: linear-gradient(135deg, #FFF0E8, #FDE4D8);
+    border: 1px solid #F0C4B0;
+    border-radius: 14px;
+    padding: 18px 22px;
+    margin-top: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .insight-icon {
+    font-size: 28px;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .insight-text h4 {
+    font-size: 14px;
+    color: #8B5E52;
+    margin-bottom: 4px;
+  }
+  .insight-text p {
+    font-size: 13px;
+    color: #7A4A3A;
+    line-height: 1.6;
+  }
+
+  /* Week Plan */
+  .week-section {
+    padding: 28px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .timeline {
+    position: relative;
+    padding-left: 20px;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 6px; top: 8px; bottom: 8px;
+    width: 2px;
+    background: linear-gradient(to bottom, #E8B4A0, #C97B6B, #9E6B5A);
+    border-radius: 2px;
+  }
+
+  .day-block {
+    position: relative;
+    margin-bottom: 24px;
+    padding-left: 32px;
+  }
+  .day-block::before {
+    content: '';
+    position: absolute;
+    left: -24px; top: 8px;
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid #C97B6B;
+    z-index: 1;
+  }
+  .day-block.today::before {
+    background: #C97B6B;
+    box-shadow: 0 0 0 4px rgba(201,123,107,0.2);
+  }
+  .day-block.highlight::before {
+    background: #E8B4A0;
+    border-color: #E8B4A0;
+  }
+
+  .day-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .day-label {
+    background: linear-gradient(135deg, #C97B6B, #9E6B5A);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    flex-shrink: 0;
+  }
+  .day-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #3D2B1F;
+  }
+  .day-sub {
+    font-size: 11px;
+    color: #A08070;
+    margin-left: auto;
+  }
+
+  .day-content {
+    background: white;
+    border-radius: 14px;
+    border: 1px solid #F0D9CF;
+    overflow: hidden;
+  }
+
+  .tasks-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: #F9EEE8;
+    border-radius: 14px;
+  }
+
+  .task-item {
+    background: white;
+    padding: 14px 16px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .task-icon {
+    width: 28px; height: 28px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .ti-morning { background: #FEF0E8; }
+  .ti-afternoon { background: #FDF6F0; }
+  .ti-output { background: #FFF5EE; }
+
+  .task-body { flex: 1; min-width: 0; }
+  .task-period {
+    font-size: 10px;
+    font-weight: 700;
+    color: #C97B6B;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .task-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #3D2B1F;
+    margin-bottom: 6px;
+  }
+  .task-questions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .q-tag {
+    background: #FEF6F3;
+    border: 1px solid #F0D5C8;
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 11px;
+    color: #8B5E52;
+  }
+
+  .output-section {
+    border-top: 1px dashed #F0D9CF;
+  }
+  .output-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px 16px;
+  }
+  .out-tag {
+    background: linear-gradient(135deg, #FFF0E8, #FDE8DC);
+    border: 1px solid #F0C4B0;
+    border-radius: 8px;
+    padding: 5px 12px;
+    font-size: 12px;
+    color: #7A4A3A;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  /* Principles */
+  .principles-section {
+    padding: 0 20px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .principles-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .do-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .dont-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .principle-card {
+    border-radius: 14px;
+    padding: 16px;
+  }
+  .do { background: linear-gradient(135deg, #F0F7F2, #E3F0E7); border: 1px solid #C5DFC9; }
+  .dont { background: linear-gradient(135deg, #FDF3F0, #FDE8E0); border: 1px solid #F0D5C8; }
+  .principle-title {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .do .principle-title { color: #3D7A4A; }
+  .dont .principle-title { color: #C97B6B; }
+  .principle-item {
+    font-size: 12px;
+    color: #4A4A4A;
+    line-height: 1.7;
+    padding: 3px 0;
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  .principle-item::before { content: '•'; flex-shrink: 0; }
+
+  .kpi-section {
+    background: white;
+    border-radius: 14px;
+    border: 1px solid #F0D9CF;
+    padding: 20px;
+  }
+  .kpi-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #C97B6B;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .kpi-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+  }
+  .kpi-item {
+    background: #FEF6F3;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+  }
+  .kpi-num {
+    font-size: 22px;
+    font-weight: 700;
+    color: #C97B6B;
+  }
+  .kpi-label {
+    font-size: 11px;
+    color: #7A6050;
+    margin-top: 2px;
+  }
+
+  .leader-focus {
+    background: linear-gradient(135deg, #FFF8F4, #FFF0E8);
+    border: 1px solid #F0C4B0;
+    border-radius: 14px;
+    padding: 18px;
+    margin-top: 16px;
+  }
+  .leader-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #8B5E52;
+    margin-bottom: 10px;
+  }
+  .leader-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .leader-item {
+    background: white;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 12px;
+    color: #5A4030;
+    line-height: 1.5;
+    border: 1px solid #F0D5C8;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 22px; }
+    .principles-grid, .do-grid { grid-template-columns: 1fr; }
+    .kpi-items { grid-template-columns: 1fr 1fr; }
+    .leader-items { grid-template-columns: 1fr; }
+    .focus-cards { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">🗓️ 2026.03.30 正式入职</div>
+  <h1>私域运营负责人<br>入职第一周行动计划</h1>
+  <p style="opacity:0.85; font-size:14px; line-height:1.6; margin-top:6px;">
+    百万私域用户 · 更年期女性客群 · 功效护肤品牌
+  </p>
+  <div class="hero-meta">
+    <span class="meta-tag">👤 带社群运营组</span>
+    <span class="meta-tag">📊 GMV为核心指标</span>
+    <span class="meta-tag">🏗️ 搭建私域闭环体系</span>
+  </div>
+</div>
+
+<!-- 岗位理解 -->
+<div class="job-section">
+  <div class="section-title">💼 岗位核心职责</div>
+  <div class="focus-cards">
+    <div class="focus-card card-1">
+      <div class="focus-num">01</div>
+      <div class="focus-title">私域战略与社群体系搭建</div>
+      <div class="focus-desc">制定策略、设计分层分群模型、搭建拉新→激活→转化→复购闭环</div>
+    </div>
+    <div class="focus-card card-2">
+      <div class="focus-num">02</div>
+      <div class="focus-title">用户精细化运营</div>
+      <div class="focus-desc">基于行为/购买阶段分层，KOC/潜在/沉默用户差异化触达</div>
+    </div>
+    <div class="focus-card card-3">
+      <div class="focus-num">03</div>
+      <div class="focus-title">内容与产品联动</div>
+      <div class="focus-desc">协同产品团队，将用户反馈转化为产品优化建议</div>
+    </div>
+    <div class="focus-card card-4">
+      <div class="focus-num">04</div>
+      <div class="focus-title">销售转化与GMV提升</div>
+      <div class="focus-desc">社群专属促销、快闪活动、会员权益，驱动关键节点爆发</div>
+    </div>
+    <div class="focus-card card-5">
+      <div class="focus-num">05</div>
+      <div class="focus-title">用户体验与满意度管理</div>
+      <div class="focus-desc">满意度监测、深度咨询、高价值用户关系维护</div>
+    </div>
+    <div class="focus-card card-6">
+      <div class="focus-num">06</div>
+      <div class="focus-title">数据分析与迭代</div>
+      <div class="focus-desc">活跃度/转化率/用户生命周期分析，驱动策略迭代</div>
+    </div>
+  </div>
+
+  <div class="insight-banner">
+    <div class="insight-icon">🔑</div>
+    <div class="insight-text">
+      <h4>关键洞察：目标用户是更年期女性</h4>
+      <p>她们的核心痛点不仅是皮肤衰老（皱纹、松弛、色斑），还有情绪波动、骨质疏松、睡眠问题等全身性健康需求。这是制定分层运营策略和产品话术的核心依据。</p>
+    </div>
+  </div>
+</div>
+
+<!-- 周计划 -->
+<div class="week-section">
+  <div class="section-title">📅 第一周行动计划</div>
+
+  <div class="timeline">
+
+    <!-- Day 1 -->
+    <div class="day-block today">
+      <div class="day-header">
+        <span class="day-label">Day 1 · 周一</span>
+        <span class="day-title">摸底日：看懂现状</span>
+        <span class="day-sub">3月30日</span>
+      </div>
+      <div class="day-content">
+        <div class="tasks-row">
+          <div class="task-item">
+            <div class="task-icon ti-morning">🌅</div>
+            <div class="task-body">
+              <div class="task-period">上午</div>
+              <div class="task-title">入职手续 → 找领导深聊</div>
+              <div class="task-questions">
+                <span class="q-tag">私域现状判断</span>
+                <span class="q-tag">最想解决的问题</span>
+                <span class="q-tag">团队配置</span>
+                <span class="q-tag">避坑提示</span>
+              </div>
+            </div>
+          </div>
+          <div class="task-item">
+            <div class="task-icon ti-afternoon">🌇</div>
+            <div class="task-body">
+              <div class="task-period">下午</div>
+              <div class="task-title">团队见面 + 看现有SOP + 拿数据权限</div>
+              <div class="task-questions">
+                <span class="q-tag">每人分工</span>
+                <span class="q-tag">社群SOP</span>
+                <span class="q-tag">话术库</span>
+                <span class="q-tag">活动流程</span>
+              </div>
+            </div>
+          </div>
+          <div class="task-item output-section">
+            <div class="task-icon ti-output">📤</div>
+            <div class="task-body">
+              <div class="task-period">今日产出</div>
+              <div class="output-tags">
+                <span class="out-tag">✅ 领导期待清单</span>
+                <span class="out-tag">✅ 团队分工图</span>
+                <span class="out-tag">✅ 产品速记版</span>
+                <span class="out-tag">✅ SOP问题清单</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="day-block">
+      <div class="day-header">
+        <span class="day-label">Day 2 · 周二</span>
+        <span class="day-title">数据深潜日</span>
+        <span class="day-sub">3月31日</span>
+      </div>
+      <div class="day-content">
+        <div class="tasks-row">
+          <div class="task-item">
+            <div class="task-icon ti-morning">🌅</div>
+            <div class="task-body">
+              <div class="task-period">上午</div>
+              <div class="task-title">私域数据全貌分析</div>
+              <div class="task-questions">
+                <span class="q-tag">用户规模</span>
+                <span class="q-tag">画像分布</span>
+                <span class="q-tag">流量来源</span>
+                <span class="q-tag">活跃度</span>
+              </div>
+            </div>
+          </div>
+          <div class="task-item">
+            <div class="task-icon ti-afternoon">🌇</div>
+            <div class="task-body">
+              <div class="task-period">下午</div>
+              <div class="task-title">转化漏斗 + 现有分层标签体系评估</div>
+              <div class="task-questions">
+                <span class="q-tag">RFM分层</span>
+                <span class="q-tag">标签完整度</span>
+                <span class="q-tag">GMV结构</span>
+                <span class="q-tag">数据异常点</span>
+              </div>
+            </div>
+          </div>
+          <div class="task-item output-section">
+            <div class="task-icon ti-output">📤</div>
+            <div class="task-body">
+              <div class="task-period">今日产出</div>
+              <div class="output-tags">
+                <span class="out-tag">✅ 私域数据一张表</span>
+                <span class="out-tag">✅ 标签体系问题清单</span>
+                <span class="out-tag">✅ 3个数据洞察</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Day 3 -->
+    <div class="day-block">
+      <div class="day-header">
+        <span class="day-label">Day 3 · 周三</span>
+        <span class="day-title">用户深潜日</span>
+        <span class="day-sub">4月1日</span>
+      </div>
+      <div class="day-content">
+        <div class="tasks-row">
+          <div class="task-item">
+            <div class="task-icon ti-morning">🌅</div>
+            <div class="task-body">
+              <div class="task-period">上午</div>
+              <div class="task-title">走完用户全旅程 + 体验社群</div>
+              <div class="task-questions">
+                <span class="q-tag">天猫→包裹→扫码→入群</span>
+                <span class="q-tag">群里聊什么</span>
+                <span class="q-tag">客服怎么答</span>
+              </div>
+            </div>
+          </div>
+          <div class="task-item">
+            <div class="task-icon ti-afternoon">🌇</div>
+            <div class="task-body">
+              <div class="task-period">下午</div>
+              <div class="task-title">听用户声音 + 找用户核心问题</div>
+              <div class="task-questions">
+                <span class="q-tag">100条聊天记录</span>
+                <span class="q-tag">TOP问题清单</span>
+                <span class="q-tag">社群调性判断</span>
+              </div>
+            </div>
+          </div>
+          <div class="task-item output-section">
+            <div class="task-icon ti-output">📤</div>
+            <div class="task-body">
+              <div class="task-period">今日产出</div>
+              <div class="output-tags">
+                <span class="out-tag">✅ 用户旅程体验报告</span>
+                <span class="out-tag">✅ TOP10用户问题</span>
+                <span class="out-tag">✅ 更年期用户特殊需求洞察</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Day 4 -->
+    <div class="day-block highlight">
+      <div class="day-header">
+        <span class="day-label" style="background:#E8B4A0;">Day 4 · 周四</span>
+        <span class="day-title">找切入点日</span>
+        <span class="day-sub">4月2日</span>
+      </div>
+      <div class="day-content">
+        <div class="tasks-row">
+          <div class="task-item">
+            <div class="task-icon ti-morning">🌅</div>
+            <div class="task-body">
+              <div class="task-period">全天</div>
+              <div class="task-title">找准第一个可快速产出的改进点</div>
+              <div class="task-questions">
+                <span class="q-tag">用户分层优化</span>
+                <span class="q-tag">标签体系完善</span>
+                <span class="q-tag">话术优化</span>
+                <span class="q-tag">内容节奏</span>
+                <span class="q-tag">转化链路</span>
+              </div>
+            </div>
+          </div>
+          <div class="task-item output-section">
+            <div class="task-icon ti-output">📤</div>
+            <div class="task-body">
+              <div class="task-period">今日产出</div>
+              <div class="output-tags">
+                <span class="out-tag">✅ 问题优先级排序</span>
+                <span class="out-tag">✅ 第一个切入点选定</span>
+                <span class="out-tag">✅ 初步方案框架</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Day 5 -->
+    <div class="day-block">
+      <div class="day-header">
+        <span class="day-label">Day 5 · 周五</span>
+        <span class="day-title">方案输出日</span>
+        <span class="day-sub">4月3日</span>
+      </div>
+      <div class="day-content">
+        <div class="tasks-row">
+          <div class="task-item">
+            <div class="task-icon ti-morning">🌅</div>
+            <div class="task-body">
+              <div class="task-period">上午</div>
+              <div class="task-title">细化方案 + 写成2页纸可执行文档</div>
+              <div class="task-questions">
+                <span class="q-tag">问题+数据+方案+预期效果</span>
+              </div>
+            </div>
+          </div>
+          <div class="task-item">
+            <div class="task-icon ti-afternoon">🌇</div>
+            <div class="task-body">
+              <div class="task-period">下午</div>
+              <div class="task-title">向领导汇报，争取资源支持</div>
+              <div class="task-questions">
+                <span class="q-tag">15分钟过方案</span>
+                <span class="q-tag">获取反馈</span>
+              </div>
+            </div>
+          </div>
+          <div class="task-item output-section">
+            <div class="task-icon ti-output">📤</div>
+            <div class="task-body">
+              <div class="task-period">今日产出</div>
+              <div class="output-tags">
+                <span class="out-tag">✅ 《XX改进方案》</span>
+                <span class="out-tag">✅ 领导反馈记录</span>
+                <span class="out-tag">✅ 下周行动计划</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Weekend -->
+    <div class="day-block">
+      <div class="day-header">
+        <span class="day-label" style="background:#E0D0C8; color:#7A6050;">Weekend · 周末</span>
+        <span class="day-title">行业知识充电</span>
+        <span class="day-sub">4月4-5日</span>
+      </div>
+      <div class="day-content">
+        <div class="tasks-row">
+          <div class="task-item">
+            <div class="task-icon ti-morning">🌅</div>
+            <div class="task-body">
+              <div class="task-period">周六</div>
+              <div class="task-title">护肤品行业速补</div>
+              <div class="task-questions">
+                <span class="q-tag">核心成分</span>
+                <span class="q-tag">皮肤基础知识</span>
+                <span class="q-tag">竞品私域调研</span>
+              </div>
+            </div>
+          </div>
+          <div class="task-item">
+            <div class="task-icon ti-afternoon">🌇</div>
+            <div class="task-body">
+              <div class="task-period">周日</div>
+              <div class="task-title">竞品私域案例深度研究</div>
+              <div class="task-questions">
+                <span class="q-tag">珀莱雅/薇诺娜/夸迪</span>
+                <span class="q-tag">私域玩法拆解</span>
+                <span class="q-tag">可借鉴点</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 行动原则 -->
+<div class="principles-section">
+  <div class="section-title">⚡ 行动原则</div>
+
+  <div class="principles-grid">
+    <div class="do-grid">
+      <div class="principle-card do">
+        <div class="principle-title">✅ 应该做</div>
+        <div class="principle-item">先摸底再开口，用数据说话</div>
+        <div class="principle-item">多问"为什么这么做"</div>
+        <div class="principle-item">记笔记，每天复盘</div>
+        <div class="principle-item">快速认识团队，叫出每个人名字</div>
+        <div class="principle-item">小切口快产出，证明自己</div>
+      </div>
+      <div class="principle-card dont">
+        <div class="principle-title">❌ 不要做</div>
+        <div class="principle-item">不要急着改现有流程</div>
+        <div class="principle-item">不要对比"我以前公司"</div>
+        <div class="principle-item">不要闭门造车不沟通</div>
+        <div class="principle-item">不要只听不说，也要有判断</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 领导关注 -->
+  <div class="kpi-section">
+    <div class="kpi-title">🎯 领导最看重的（实干家型）</div>
+    <div class="kpi-items">
+      <div class="kpi-item">
+        <div class="kpi-num">发现</div>
+        <div class="kpi-label">能看出问题在哪里</div>
+      </div>
+      <div class="kpi-item">
+        <div class="kpi-num">说清</div>
+        <div class="kpi-label">能用数据描述问题</div>
+      </div>
+      <div class="kpi-item">
+        <div class="kpi-num">方案</div>
+        <div class="kpi-label">有可行的解决思路</div>
+      </div>
+      <div class="kpi-item">
+        <div class="kpi-num">落地</div>
+        <div class="kpi-label">能执行出结果</div>
+      </div>
+    </div>
+
+    <div class="leader-focus">
+      <div class="leader-title">📋 第一周必须搞清楚的关键问题</div>
+      <div class="leader-items">
+        <div class="leader-item">私域体系目前处于什么阶段（0→1 / 1→10 / 10→100）？</div>
+        <div class="leader-item">领导的KPI是什么？优先级是什么？</div>
+        <div class="leader-item">现有标签体系是怎么分的？有多少标签？</div>
+        <div class="leader-item">当前转化率/复购率是多少？有基准数据吗？</div>
+        <div class="leader-item">团队几个人？各自负责什么？</div>
+        <div class="leader-item">有没有已经跑通的SOP？哪些环节卡住了？</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
